@@ -25,7 +25,7 @@ def crawNews():
         dic = json.loads(res)
         tab_list = dic['tab_list']
         if lastid == tab_list[0]['postid']:
-            return 
+            continue 
 
         for tab in tab_list:
             title = tab['title']
